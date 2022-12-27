@@ -1,0 +1,26 @@
+.cover {
+  min-height: 740px;
+  background-image: url(../../images/cover-trains.jpg);
+  background-position: center center;
+  display: flex;
+  width: calc(100% - 48px * 2);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin: 92px auto 0;
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+  .cover {
+    font-size: calc((100vw - 768px) / (1024 - 768) * (72 - 42) + 42px);
+    width: calc(100% - ((100vw - 1024px) / (1280 - 1024) * 48 * 2));
+    min-height: 62.5vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cover {
+    width: 100%;
+  }
+}

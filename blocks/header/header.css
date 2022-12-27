@@ -1,0 +1,28 @@
+.header {
+  width: calc(100% - 48px * 2);
+  height: 52px;
+  padding-top: 28px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    width: calc(100% - ((100vw - 768px) / (1024 - 768) * (48 - 24) + 24px) * 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: calc(100% - ((100vw - 320px) / (768 - 320) * (24 - 16) + 16px) * 2);
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    width: calc(100% - 32px);
+  }
+}

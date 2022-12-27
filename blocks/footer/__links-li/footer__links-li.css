@@ -1,0 +1,9 @@
+.footer__links-li {
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .footer__links-li:not(:first-child) {
+    padding-top: 32px;
+  }
+}

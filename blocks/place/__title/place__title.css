@@ -1,0 +1,27 @@
+.place__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.1;
+  color: #ffffff;
+  margin: 0;
+  align-self: end;
+}
+
+@media (max-width: 1024px) {
+  .place__title {
+    font-size: calc((100vw - 768px) / (1024 - 768) * (72 - 42) + 42px);
+  }
+}
+
+@media (max-width: 768px) {
+  .place__title {
+    font-size: calc((100vw - 320px) / (768 - 320) * (42 - 32) + 32px);
+  }
+}
+
+@media (max-width: 320px) {
+  .place__title {
+    font-size: 32px;
+  }
+}
