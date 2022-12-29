@@ -1,5 +1,5 @@
 .place {
-  margin: 0;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 460px 1fr;
   grid-column-gap: 40px;
@@ -12,24 +12,51 @@
 
 @media (max-width: 1280px) {
   .place {
-    grid-column-gap: 32px;
-    grid-template-columns: calc(
-        (100vw - 1024px) / (1280 - 1024) * (460 - 440) + 440px
-      ) 1fr;
+    grid-template-columns:
+      calc((100vw - 1024px) / (1280 - 1024) * (460 - 440) + 440px)
+      1fr;
   }
 }
 
 @media (max-width: 1024px) {
+  .place:not(:first-child) {
+    padding-top: calc((100vw - 768px) / (1024 - 768) * (80 - 73) + 73px);
+  }
+  .place {
+    grid-column-gap: 32px;
+    grid-template-columns:
+      calc((100vw - 768px) / (1024 - 768) * (440 - 340) + 340px)
+      1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .place:not(:first-child) {
+    padding-top: calc((100vw - 320px) / (768 - 320) * (73 - 50) + 50px);
+  }
+
   .place {
     grid-column-gap: 28px;
-    grid-template-columns: calc(
-        (100vw - 768px) / (1024 - 768) * (440 - 340) + 340px
-      ) 1fr;
   }
 }
 
 @media (max-width: 767px) {
   .place {
     grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .place {
+    grid-row-gap: 10vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .place:not(:first-child) {
+    padding-top: 50px;
+  }
+  .place {
+    grid-row-gap: 32px;
   }
 }

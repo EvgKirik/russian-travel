@@ -6,6 +6,8 @@
   text-decoration-line: underline;
   color: #ffffff;
   transition: opacity 0.2s ease-in-out;
+  display: block;
+  padding-top: 12px;
 }
 
 .place__link:hover {

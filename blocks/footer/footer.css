@@ -11,6 +11,7 @@
 
 @media (max-width: 1024px) {
   .footer {
+    padding-top: calc((100vw - 768px) / (1024 - 768) * (92 - 88) + 88px);
     max-width: calc(
       100% - ((100vw - 768px) / (1024 - 768) * (48 - 24) + 24px) * 2
     );
@@ -19,6 +20,7 @@
 
 @media (max-width: 768px) {
   .footer {
+    padding-top: calc((100vw - 320px) / (768 - 320) * (88 - 64) + 64px);
     max-width: calc(
       100% - ((100vw - 320px) / (768 - 320) * (24 - 16) + 16px) * 2
     );
@@ -33,6 +35,7 @@
 
 @media (max-width: 320px) {
   .footer {
+    padding-top: 64px;
     max-width: calc(100% - 32px);
   }
 }

@@ -1,14 +1,25 @@
 .place__paragraph {
-    font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 163%;
-color: #FFFFFF;
-margin: 0;
-align-self: start;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 162.9%;
+  color: #ffffff;
+  margin: 0;
+  align-self: start;
 }
 
 .place__paragraph:not(:first-child) {
-    padding-top: 26px;
+  padding-top: 26px;
 }
 
+@media (max-width: 1024px) {
+  .place__paragraph {
+    font-size: calc((100vw - 768px) / (1024 - 768) * (18 - 16) + 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+  }
+}

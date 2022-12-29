@@ -6,6 +6,7 @@
   color: #ffffff;
   margin: 0;
   align-self: end;
+  padding-right: 3%;
 }
 
 @media (max-width: 1024px) {
