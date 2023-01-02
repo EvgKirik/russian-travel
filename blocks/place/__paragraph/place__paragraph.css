@@ -24,13 +24,3 @@
     line-height: 1.62em;
   }
 }
-
-.place__br {
-  display: none;
-}
-
-@media (max-width: 330px) {
-  .place__br_baikal {
-    display: block;
-  }
-}
