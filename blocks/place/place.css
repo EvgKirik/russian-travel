@@ -48,6 +48,7 @@
 
 @media (max-width: 480px) {
   .place {
+    grid-template-columns: 1fr;
     grid-row-gap: 10vw;
   }
 }
